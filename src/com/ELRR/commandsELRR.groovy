@@ -1,4 +1,6 @@
+#!/usr/bin/env groovy
 package com.ELRR
+
 class esbuildOps implements Serializable {
     static def dotnetBuild (script, projectFolder,projectName,configuration){
     /*not the final code*/
