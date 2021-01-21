@@ -1,7 +1,7 @@
-#!/usr/bin/env groovy
-package com.ELRR
 
-class esbuildOps implements Serializable {
+package template
+
+class ELRRbuildOps implements Serializable {
     static def dotnetBuild (script, projectFolder,projectName,configuration){
     /*not the final code*/
             sctipt.echo 'building'
