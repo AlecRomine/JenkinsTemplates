@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call (script ){
+def call (){
     /*not the final code*/
         def tname = ""
           echo "Checking environmentals"
@@ -10,7 +10,7 @@ def call (script ){
           echo "2 print ${tname}" 
           tname = env.JOB_NAME.replaceAll('/','-')
           echo "3 print ${tname}"
-          script.env.jobname = tname
+          env.jobname = tname
           echo "4 print  ${JOB_NAME}" 
           echo "5 print  ${env.PemFile}" 
           echo "5 print  ${env.jobname}" 
