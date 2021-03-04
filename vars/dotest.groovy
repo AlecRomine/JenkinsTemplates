@@ -12,6 +12,7 @@ def call (){
           echo "3 print ${tname}"
           env.jobname = "${tname}"
           echo "4 print  ${JOB_NAME}" 
-          echo "5 print  ${jobname}" 
+          echo "5 print  ${env.PemFile}" 
+          echo "5 print  ${env.jobname}" 
           echo "done"
     }
