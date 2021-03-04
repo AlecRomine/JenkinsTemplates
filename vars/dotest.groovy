@@ -5,7 +5,7 @@ def call (){
           echo "Checking environmentals"
           sh "printenv | sort"
           env.jobname = "${JOB_NAME}"
-          envjobname = envjobname.replaceAll('/','-') 
+          env.jobname = env.jobname.replaceAll('/','-') 
           sh "printenv | sort"
           echo "done"
     }
