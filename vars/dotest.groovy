@@ -6,7 +6,7 @@ def call (){
           sh "printenv | sort"
           echo "get jobname"
           env.jobname = env.JOB_NAME.replaceAll('/','-') 
-          echo "priunt env again"
+          echo "print env again ${jobname}" 
           sh "printenv | sort"
           echo "done"
     }
