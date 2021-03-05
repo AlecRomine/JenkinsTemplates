@@ -5,6 +5,7 @@ def call (String servername){
         def tname = ""
         tname = env.JOB_NAME.replaceAll('/','-')
         env.jobname = tname
+        env.DEPLOYSERVER= servername
         env.LATESTTAG= "jenkins-${tname}-latest"
         env.registry = 'jgedney/elrr-images';
         env.buildTAG = "${registry}:${BUILD_TAG}"
