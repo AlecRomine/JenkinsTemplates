@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call (strng dockerFolder){
+def call (String dockerFolder){
     /*not the final code*/
         cd dockerFolder
         sh "docker build . -t ${buildTAG} -t ${buildLATESTTAG}" 
